@@ -1,13 +1,16 @@
 // ADD CODE HERE
 function after(num, callback){
-    let counter = 0;
+
+    //num = 3
+    //callback = called
+
+    let counter = 1;
     
-    function inner(){
-      if (counter < num){
-        callback(string);
-          counter ++;
+    function inner(string){
+        if (counter < num){
+            counter ++;
         }else if(counter === num){
-          callback(string);
+            return callback(string);
         }
     }
     return inner;
